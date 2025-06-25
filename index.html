@@ -10,13 +10,13 @@
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=\'2.0\';
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
       n.queue=[];t=b.createElement(e);t.async=!0;
       t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,\'script\',
-      \'https://connect.facebook.net/en_US/fbevents.js\' );
-      fbq(\'init\', \'9934445423238894\');
-      fbq(\'track\', \'PageView\');
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '9934445423238894');
+      fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=9934445423238894&ev=PageView&noscript=1"
@@ -39,7 +39,7 @@
             --accent-orange: #ff6b35;
             --text-light: #ffffff;
             --text-gray: #b0b0b0;
-            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100% );
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --gradient-gold: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
             --gradient-dark: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
             --shadow-glow: 0 0 30px rgba(255, 215, 0, 0.3);
@@ -47,7 +47,7 @@
         }
 
         body {
-            font-family: \'Inter\', sans-serif;
+            font-family: 'Inter', sans-serif;
             background: var(--primary-dark);
             color: var(--text-light);
             line-height: 1.6;
@@ -97,7 +97,7 @@
         }
 
         .hero::before {
-            content: \'\';
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -115,7 +115,7 @@
         }
 
         .hero h1 {
-            font-family: \'Playfair Display\', serif;
+            font-family: 'Playfair Display', serif;
             font-size: clamp(3rem, 8vw, 8rem);
             font-weight: 900;
             background: var(--gradient-gold);
@@ -164,7 +164,7 @@
         }
 
         .cta-primary::before {
-            content: \'\';
+            content: '';
             position: absolute;
             top: 0;
             left: -100%;
@@ -197,7 +197,7 @@
         }
 
         .section-title {
-            font-family: \'Playfair Display\', serif;
+            font-family: 'Playfair Display', serif;
             font-size: clamp(2rem, 5vw, 4rem);
             font-weight: 700;
             text-align: center;
@@ -215,7 +215,7 @@
         }
 
         .pain-section::before {
-            content: \'\';
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -311,7 +311,7 @@
         }
 
         .product-content h3 {
-            font-family: \'Playfair Display\', serif;
+            font-family: 'Playfair Display', serif;
             font-size: 2.2rem;
             color: var(--accent-gold);
             margin-bottom: 20px;
@@ -337,7 +337,7 @@
         }
 
         .product-benefits li::before {
-            content: \'✓\';
+            content: '✓';
             position: absolute;
             left: 0;
             color: var(--accent-gold);
@@ -421,14 +421,14 @@
         }
 
         .testimonial-card::before {
-            content: \'"\';
+            content: '"';
             position: absolute;
             top: -10px;
             left: 20px;
             font-size: 6rem;
             color: var(--accent-gold);
             opacity: 0.3;
-            font-family: \'Playfair Display\', serif;
+            font-family: 'Playfair Display', serif;
         }
 
         .testimonial-card:hover {
@@ -472,7 +472,7 @@
         }
 
         .urgency-section::before {
-            content: \'\';
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -529,7 +529,7 @@
         }
 
         .cta-final::before {
-            content: \'\';
+            content: '';
             position: absolute;
             top: 0;
             left: -100%;
@@ -913,7 +913,7 @@
     <!-- Footer CTA -->
     <section class="footer-cta">
         <div class="container">
-            <h2 style="font-family: \'Playfair Display\', serif; font-size: 3rem; color: var(--accent-gold); margin-bottom: 30px;" class="reveal">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--accent-gold); margin-bottom: 30px;" class="reveal">
                 Sua Nova História Começa Agora
             </h2>
             <p style="font-size: 1.3rem; color: var(--text-gray); margin-bottom: 50px; max-width: 600px; margin-left: auto; margin-right: auto;" class="reveal">
@@ -922,7 +922,7 @@
             <a href="https://pay.kiwify.com.br/EkPZT58" class="cta-final reveal" target="_blank">
                 <i class="fas fa-rocket"></i> QUERO MINHA LIBERDADE AGORA!
             </a>
-            <p style="color: var(--text-gray ); margin-top: 30px; font-size: 0.9rem;" class="reveal">
+            <p style="color: var(--text-gray); margin-top: 30px; font-size: 0.9rem;" class="reveal">
                 ✅ Acesso imediato após o pagamento<br>
                 ✅ Garantia de 7 dias
             </p>
@@ -932,24 +932,24 @@
     <script>
         // Carrossel
         let currentSlide = 0;
-        const slides = document.querySelectorAll(\'.carousel-slide\');
+        const slides = document.querySelectorAll('.carousel-slide');
         const totalSlides = slides.length;
-        const wrapper = document.getElementById(\'carouselWrapper\');
-        const indicators = document.querySelectorAll(\'.indicator\');
+        const wrapper = document.getElementById('carouselWrapper');
+        const indicators = document.querySelectorAll('.indicator');
 
         // Imagens reais dos produtos
         const productImages = [
-            \'desaposta.png\',
-            \'planner.png\',
-            \'bloqueio.png\',
-            \'ajudar.png\'
+            'desaposta.png',
+            'planner.png',
+            'bloqueio.png',
+            'ajudar.png'
         ];
 
         function updateCarousel() {
             wrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
             
             indicators.forEach((indicator, index) => {
-                indicator.classList.toggle(\'active\', index === currentSlide);
+                indicator.classList.toggle('active', index === currentSlide);
             });
         }
 
@@ -969,11 +969,11 @@
         }
 
         // Event listeners
-        document.getElementById(\'nextBtn\').addEventListener(\'click\', nextSlide);
-        document.getElementById(\'prevBtn\').addEventListener(\'click\', prevSlide);
+        document.getElementById('nextBtn').addEventListener('click', nextSlide);
+        document.getElementById('prevBtn').addEventListener('click', prevSlide);
 
         indicators.forEach((indicator, index) => {
-            indicator.addEventListener(\'click\', () => goToSlide(index));
+            indicator.addEventListener('click', () => goToSlide(index));
         });
 
         // Auto-play
@@ -981,26 +981,26 @@
 
         // Depoimentos interativos
         function toggleTestimonial(card) {
-            const preview = card.querySelector(\'.testimonial-preview\');
-            const full = card.querySelector(\'.testimonial-full\');
-            const readMore = card.querySelector(\'.read-more\');
+            const preview = card.querySelector('.testimonial-preview');
+            const full = card.querySelector('.testimonial-full');
+            const readMore = card.querySelector('.read-more');
             
-            if (full.style.display === \'none\' || !full.style.display) {
-                preview.style.display = \'none\';
-                full.style.display = \'block\';
-                readMore.textContent = \'Clique para ler menos\';
-                card.style.transform = \'scale(1.02)\';
+            if (full.style.display === 'none' || !full.style.display) {
+                preview.style.display = 'none';
+                full.style.display = 'block';
+                readMore.textContent = 'Clique para ler menos';
+                card.style.transform = 'scale(1.02)';
             } else {
-                preview.style.display = \'block\';
-                full.style.display = \'none\';
-                readMore.textContent = \'Clique para ler mais\';
-                card.style.transform = \'scale(1)\';
+                preview.style.display = 'block';
+                full.style.display = 'none';
+                readMore.textContent = 'Clique para ler mais';
+                card.style.transform = 'scale(1)';
             }
         }
 
         // Animações de scroll
         function revealOnScroll() {
-            const reveals = document.querySelectorAll(\'.reveal\');
+            const reveals = document.querySelectorAll('.reveal');
             
             reveals.forEach(reveal => {
                 const windowHeight = window.innerHeight;
@@ -1008,57 +1008,57 @@
                 const elementVisible = 150;
                 
                 if (elementTop < windowHeight - elementVisible) {
-                    reveal.classList.add(\'active\');
+                    reveal.classList.add('active');
                 }
             });
         }
 
-        window.addEventListener(\'scroll\', revealOnScroll);
+        window.addEventListener('scroll', revealOnScroll);
 
         // Partículas de fundo
         function createParticles() {
-            const particlesContainer = document.getElementById(\'particles\');
+            const particlesContainer = document.getElementById('particles');
             
             for (let i = 0; i < 50; i++) {
-                const particle = document.createElement(\'div\');
-                particle.className = \'particle\';
-                particle.style.left = Math.random() * 100 + \'%\';
-                particle.style.animationDelay = Math.random() * 6 + \'s\';
-                particle.style.animationDuration = (Math.random() * 3 + 3) + \'s\';
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
                 particlesContainer.appendChild(particle);
             }
         }
 
         // Smooth scroll para links internos
-        document.querySelectorAll(\'a[href^="#"]\').forEach(anchor => {
-            anchor.addEventListener(\'click\', function (e) {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute(\'href\'));
+                const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     target.scrollIntoView({
-                        behavior: \'smooth\',
-                        block: \'start\'
+                        behavior: 'smooth',
+                        block: 'start'
                     });
                 }
             });
         });
 
         // Inicialização
-        document.addEventListener(\'DOMContentLoaded\', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             createParticles();
             revealOnScroll();
             
             // Carregar imagens reais
-            document.getElementById(\'img1\').src = productImages[0];
-            document.getElementById(\'img2\').src = productImages[1];
-            document.getElementById(\'img3\').src = productImages[2];
-            document.getElementById(\'img4\').src = productImages[3];
+            document.getElementById('img1').src = productImages[0];
+            document.getElementById('img2').src = productImages[1];
+            document.getElementById('img3').src = productImages[2];
+            document.getElementById('img4').src = productImages[3];
         });
 
         // Efeito de typing no título
         function typeWriter(element, text, speed = 100) {
             let i = 0;
-            element.innerHTML = \'\';
+            element.innerHTML = '';
             
             function type() {
                 if (i < text.length) {
@@ -1073,7 +1073,7 @@
 
         // Contador de visitantes (simulado)
         function updateVisitorCounter() {
-            const counter = document.createElement(\'div\');
+            const counter = document.createElement('div');
             counter.style.cssText = `
                 position: fixed;
                 bottom: 20px;
@@ -1103,3 +1103,4 @@
     </script>
 </body>
 </html>
+
