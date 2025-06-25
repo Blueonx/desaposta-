@@ -874,6 +874,9 @@
                     E se você investisse menos que isso para salvar sua vida?
                 </div>
             </div>
+            <p style="font-size: 1.8rem; color: var(--accent-gold); font-weight: 700; margin-top: 20px;" class="reveal">
+                De <s style="color: var(--text-gray);">R$ 197,00</s> por apenas <span style="color: var(--accent-orange);">R$ 27,90</span>
+            </p>
             <div style="max-width: 600px; margin: 0 auto; text-align: center;" class="reveal">
                 <p style="font-size: 1.2rem; color: var(--text-gray); margin-bottom: 30px;">
                     O DESAPOSTA não é mágica. É um guia prático, realista, baseado em dados e psicologia comportamental que já ajudou centenas de pessoas a vencer esse ciclo.
@@ -897,19 +900,12 @@
             <p style="font-size: 1.3rem; color: var(--text-gray); margin-bottom: 50px; max-width: 600px; margin-left: auto; margin-right: auto;" class="reveal">
                 Não espere mais para retomar o controle da sua vida. Milhares já escolheram a liberdade. Agora é sua vez.
             </p>
-                  <a href="https://pay.kiwify.com.br/EkPZT58" class="cta-final reveal" target="_blank">
-            <i class="fas fa-rocket"></i> QUERO MINHA LIBERDADE AGORA!
-        </a>
-        <p style="color: var(--text-gray ); margin-top: 30px; font-size: 0.9rem;" class="reveal">
-            ✅ Acesso imediato após o pagamento<br>
-            ✅ Garantia de 7 dias
-        </p>
-
+            <a href="https://pay.kiwify.com.br/EkPZT58" class="cta-final reveal" target="_blank">
+                <i class="fas fa-rocket"></i> QUERO MINHA LIBERDADE AGORA!
             </a>
             <p style="color: var(--text-gray); margin-top: 30px; font-size: 0.9rem;" class="reveal">
                 ✅ Acesso imediato após o pagamento<br>
-                ✅ Garantia de 7 dias<br>
-                ✅ Suporte completo
+                ✅ Garantia de 7 dias
             </p>
         </div>
     </section>
@@ -924,10 +920,10 @@
 
         // Imagens reais dos produtos
         const productImages = [
-            'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==', // Placeholder para Desaposta
-            'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==', // Placeholder para Planner
-            'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==', // Placeholder para Bloqueio
-            'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==' // Placeholder para Como Ajudar
+            'desaposta.png',
+            'planner.png',
+            'bloqueio.png',
+            'ajudar.png'
         ];
 
         function updateCarousel() {
@@ -1033,12 +1029,11 @@
             createParticles();
             revealOnScroll();
             
-            // Carregar imagens reais se disponíveis
-            // Aqui você pode substituir pelos URLs reais das suas imagens
-            // document.getElementById('img1').src = 'URL_DA_IMAGEM_DESAPOSTA';
-            // document.getElementById('img2').src = 'URL_DA_IMAGEM_PLANNER';
-            // document.getElementById('img3').src = 'URL_DA_IMAGEM_BLOQUEIO';
-            // document.getElementById('img4').src = 'URL_DA_IMAGEM_COMO_AJUDAR';
+            // Carregar imagens reais
+            document.getElementById('img1').src = productImages[0];
+            document.getElementById('img2').src = productImages[1];
+            document.getElementById('img3').src = productImages[2];
+            document.getElementById('img4').src = productImages[3];
         });
 
         // Efeito de typing no título
